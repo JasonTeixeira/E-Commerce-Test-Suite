@@ -1,0 +1,234 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+*.cpp
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+test-output/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test reports and artifacts
+reports/
+logs/
+*.log
+*.html
+*.xml
+allure-results/
+allure-report/
+
+# Screenshots and videos
+screenshots/
+videos/
+test-results/
+playwright-report/
+trace.zip
+
+# Visual regression
+visual/baselines/*.png
+visual/diffs/*.png
+visual/temp/*.png
+!visual/baselines/.gitkeep
+!visual/diffs/.gitkeep
+!visual/temp/.gitkeep
+
+# Performance reports
+performance/reports/
+*.jmx
+*.jtl
+
+# Locust
+locust_*.html
+
+# Security scan results
+security/scans/
+security/reports/
+*.sarif
+
+# Accessibility reports
+accessibility/reports/
+pa11y-report.json
+
+# Node modules (if using any JS tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Credentials
+*.pem
+*.key
+credentials.json
+secrets.yaml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# AWS
+.aws/
+
+# Local config overrides
+local_config.py
+config_local.py
+
+# pytest
+.pytest_cache/
+pytestdebug.log
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Profiling
+*.prof
+*.lprof
+profile_*.txt
+
+# Docker
+.dockerignore
+
+# Misc
+*.zip
+*.tar.gz
+*.rar

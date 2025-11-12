@@ -5,128 +5,202 @@
 [![Playwright](https://img.shields.io/badge/playwright-1.41-green.svg)](https://playwright.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Enterprise-grade full-stack test automation framework with 300+ tests covering UI, API, Performance, Security, Accessibility, and Integration testing for e-commerce applications.**
+> A battle-tested, production-ready test automation framework I built from scratch. Started with "let's automate some tests" and ended up with 278+ tests, a full CI/CD pipeline, and more automation than a Tesla factory.
 
-## 🎯 Project Overview
+## 🎯 What This Is
 
-This comprehensive testing framework demonstrates professional QA automation across the entire testing pyramid, showcasing expertise in:
-
-- ✅ **UI Automation** (80+ tests) - Playwright + Selenium
-- ✅ **API Testing** (60+ tests) - REST API validation
-- ✅ **Visual Regression** (30+ tests) - Screenshot comparison
-- ✅ **Performance Testing** (20+ scenarios) - Locust load testing
-- ✅ **Security Testing** (15+ scans) - OWASP ZAP integration
-- ✅ **Accessibility Testing** (25+ tests) - WCAG 2.1 AA compliance
-- ✅ **Integration Testing** (30+ workflows) - E2E user journeys
-- ✅ **Database Testing** (20+ tests) - Data integrity validation
-- ✅ **Contract Testing** (15+ contracts) - API contract verification
-- ✅ **Mobile Testing** (40+ tests) - Responsive design validation
-
-**Total: 300+ Professional Tests | 10,000+ Lines of Production Code**
-
-## 📊 Test Coverage Matrix
-
-| Test Type | Tests | Coverage | Tool/Framework |
-|-----------|-------|----------|----------------|
-| **UI Tests** | 80+ | Login, Products, Cart, Checkout | Playwright, Selenium |
-| **API Tests** | 60+ | CRUD, Auth, Data validation | Requests, httpx |
-| **Visual Tests** | 30+ | Critical pages, components | Pillow, OpenCV |
-| **Performance** | 20+ | Load, stress, spike testing | Locust, K6 |
-| **Security** | 15+ | XSS, SQL injection, auth bypass | OWASP ZAP |
-| **Accessibility** | 25+ | WCAG compliance, screen readers | axe-core |
-| **Integration** | 30+ | Complete user workflows | Pytest |
-| **Database** | 20+ | Data integrity, constraints | SQLAlchemy |
-| **Contract** | 15+ | API contracts, schemas | Pact |
-| **Mobile** | 40+ | Responsive, mobile-first | Playwright mobile |
-| **Total** | **300+** | **Full-stack coverage** | **Multi-framework** |
-
-## 🏗️ Architecture
+I wanted to build something that would actually impress in Senior SDET interviews. Not just "hello world" tests, but a **real framework** you'd use in production. Here's what's inside:
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    CI/CD Pipeline (20+ jobs)                 │
-│  Quality Checks | UI Tests | API Tests | Performance | Security│
-└─────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────┐
-│                      Test Execution Layer                    │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐      │
-│  │    UI    │ │   API    │ │   Perf   │ │ Security │      │
-│  │  Tests   │ │  Tests   │ │  Tests   │ │  Tests   │      │
-│  └──────────┘ └──────────┘ └──────────┘ └──────────┘      │
-└─────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────┐
-│                     Framework Layer                          │
-│  ┌────────────────────────────────────────────────────┐    │
-│  │  Page Objects | API Clients | Data Models | Utils  │    │
-│  └────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────┐
-│                  Application Under Test                      │
-│                    DemoBlaze E-Commerce                      │
-│                 (https://www.demoblaze.com)                  │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                     THE TESTING ARSENAL                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  🎭 UI Tests (147)           👾 Security (15)                  │
+│     Page Objects, Edge Cases     OWASP Top 10                  │
+│                                                                 │
+│  🔌 API Tests (60)           ♿ Accessibility (25)              │
+│     REST + Retry Logic           WCAG 2.1 AA                   │
+│                                                                 │
+│  ⚡ Performance (20)         👁️  Visual Regression (30+)        │
+│     P95/P99 Metrics              Screenshot Diffs              │
+│                                                                 │
+│  🔄 Integration (15)         🚀 CI/CD Pipeline (14 jobs)       │
+│     E2E Workflows                GitHub Actions                │
+│                                                                 │
+│                  💪 278+ Tests Total                            │
+│              10,000+ Lines of Real Code                         │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-## 🚀 Quick Start
+**Why this matters:** Every test here solves a real problem. The retry logic? Because APIs fail. The visual regression? Because "it works on my machine" isn't good enough. The P95 metrics? Because averages lie.
 
-### Prerequisites
+## 📊 The Test Breakdown (With Real Numbers)
 
-- Python 3.11+
-- Node.js 18+ (for Playwright)
-- Docker (optional, for containerized execution)
+```
+     UI TESTS (147)          API TESTS (60)         VISUAL (30+)
+┌────────────────┐  ┌───────────────┐  ┌───────────────┐
+│ ██████████████│  │ █████████████ │  │ █████████████ │
+│ Homepage: 49   │  │ Products: 20  │  │ Pages: 5      │
+│ Auth: 20       │  │ Users: 15     │  │ Components: 5 │
+│ Products: 18   │  │ Cart: 25      │  │ X-Browser: 5  │
+│ Cart: 22       │  └───────────────┘  │ Responsive: 7 │
+│ E2E: 15        │                 │ States: 4     │
+│ Edge Cases: 23 │                 └───────────────┘
+└────────────────┘
 
-### Installation
+  PERFORMANCE (20)         SECURITY (15)       ACCESSIBILITY (25)
+┌────────────────┐  ┌───────────────┐  ┌───────────────┐
+│ █████████████ │  │ █████████████ │  │ █████████████ │
+│ P95/P99        │  │ SQL Inject: 3 │  │ Keyboard: 5   │
+│ Throughput     │  │ XSS: 3        │  │ Focus: 3      │
+│ Concurrency    │  │ Auth: 4       │  │ ARIA: 6       │
+│ Degradation    │  │ Headers: 3    │  │ Contrast: 3   │
+│ RPS Metrics    │  │ OWASP Top 10  │  │ WCAG 2.1 AA   │
+└────────────────┘  └───────────────┘  └───────────────┘
+
+         🏆 278+ TOTAL TESTS 🏆
+    (Plus Locust load testing scenarios)
+```
+
+**What each test type actually does:**
+- **UI Tests**: Click buttons, fill forms, make sure the site doesn't explode
+- **API Tests**: Hit endpoints until they cry (or return 200 OK)
+- **Visual**: Screenshot everything, compare pixels ("did that button move?")
+- **Performance**: Measure P95/P99 because averages are liars
+- **Security**: Try to break in (ethically). OWASP would be proud
+- **Accessibility**: Make sure everyone can use it, not just mouse-clickers
+
+| Framework Choice | Why I Picked It | What I Almost Used |
+|-----------------|-----------------|--------------------|
+| **Playwright** | Auto-waits, multi-browser, fast | Selenium (too brittle) |
+| **Pytest** | Fixtures, markers, plugins | unittest (too basic) |
+| **Requests** | Simple, powerful, everyone uses it | httpx (overkill here) |
+| **Locust** | Python-based, easy load testing | JMeter (XML hell) |
+| **Pillow** | Pure Python, good enough | OpenCV (sledgehammer for a nail) |
+
+## 🏗️ How It All Fits Together
+
+**The Architecture** (or: how I stopped worrying and learned to love Page Objects)
+
+```
+    🚀 GitHub Actions CI/CD
+         ┌────────────────────────────────────┐
+         │  14 Jobs Running in Parallel     │
+         │  ✓ Lint  ✓ Type  ✓ Test  ✓ Deploy  │
+         └─────────────────┬──────────────────┘
+                        │
+         ┌──────────────┴──────────────┐
+         │   Test Execution Layer     │
+         │                             │
+   ┌─────┼──────┬──────┬──────┼─────┐
+   │     │      │      │      │     │
+ ┌─┼─┐ ┌┼─┐ ┌┼─┐ ┌┼─┐ ┌┼─┐ ┌┼─┐
+ │UI│ │API│ │⚡│ │👾│ │♿│ │👁│  ← All the test types
+ └─┬─┘ └┬─┘ └┬─┘ └┬─┘ └┬─┘ └┬─┘
+   │     │    │    │    │    │
+   └─────┼────┼────┼────┼────┼────┘
+         │          │
+   ┌─────┼──────────┼─────┐
+   │ Framework Components  │  ← The magic sauce
+   │                       │
+   │ 🎭 Page Objects (5)   │  521-line BasePage
+   │ 🔌 API Clients (2)    │  Retry logic built-in
+   │ 📸 Screenshot Compare │  Pillow-powered
+   │ 📊 Locust Load Tests  │  5 user behaviors
+   │ ⚙️  Utilities & Helpers │  DRY everything
+   └───────────┬───────────┘
+              │
+              ↓
+   ┌──────────┼───────────┐
+   │  DemoBlaze.com   │  ← The victim
+   │ 🛒 E-Commerce Site  │
+   └──────────────────────┘
+```
+
+**Real talk:** I tried Selenium first. Spent 3 days fighting with WebDriver managers and flaky waits. Switched to Playwright and never looked back. The Page Object Model? Game changer. Instead of `page.click("#button")` scattered everywhere, I have `homepage.click_login()`. Way cleaner.
+
+## 🚀 Get Started in 2 Minutes
+
+**Prerequisites:** Python 3.10+, that's it.
+
+### The Fast Track
 
 ```bash
-# Clone repository
+# Clone it
 git clone https://github.com/JasonTeixeira/E-Commerce-Test-Suite.git
 cd E-Commerce-Test-Suite
 
-# Create virtual environment
+# Set it up (Makefile ftw)
+make install        # Installs everything
+
+# Run something
+make test-smoke     # Quick smoke tests (~30 seconds)
+make test          # All tests (grab a coffee)
+
+# See everything you can do
+make help          # 30+ commands
+```
+
+### The Manual Way (If You're Into That)
+
+```bash
+# Virtual environment dance
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies
+# Install stuff
 pip install -r requirements.txt
-
-# Install Playwright browsers
 playwright install
 
-# Copy environment configuration
+# Environment file
 cp .env.example .env
 ```
 
-### Running Tests
+### Command Cheat Sheet
+
+```
+┌──────────────────────────────────────────────────┐
+│          COMMON COMMANDS (Use Makefile!)            │
+├──────────────────────────────────────────────────┤
+│                                                  │
+│  make test-smoke     ← Quick check (~30s)       │
+│  make test-ui        ← All UI tests             │
+│  make test-api       ← All API tests            │
+│  make test-visual    ← Visual regression        │
+│  make test-security  ← Security scans           │
+│                                                  │
+│  make coverage       ← Generate coverage        │
+│  make format         ← Black + isort            │
+│  make lint           ← Run Pylint              │
+│  make quality        ← All quality checks      │
+│                                                  │
+│  make clean          ← Clean up artifacts      │
+│  make help           ← See all 30+ commands    │
+│                                                  │
+└──────────────────────────────────────────────────┘
+```
+
+**Or use pytest directly (if you like typing more):**
 
 ```bash
-# Run all tests
-pytest
+pytest                    # All tests
+pytest -m smoke          # Just smoke tests
+pytest -m "ui and critical"  # UI critical path
+pytest -n 8              # Parallel (fast!)
+pytest --cov=. --cov-report=html  # With coverage
 
-# Run specific test suites
-pytest ui_tests/           # UI tests only
-pytest api_tests/          # API tests only
-pytest performance/        # Performance tests
-pytest security/           # Security scans
-pytest accessibility/      # Accessibility tests
-
-# Run by markers
-pytest -m smoke           # Smoke tests
-pytest -m regression      # Full regression
-pytest -m critical        # Critical path tests
-
-# Parallel execution
-pytest -n 8               # 8 parallel workers
-
-# Generate reports
-pytest --html=reports/html/report.html --self-contained-html
-pytest --alluredir=reports/allure-results
-
-# With coverage
-pytest --cov=. --cov-report=html --cov-report=term
+# Specific suites
+pytest ui_tests/         # UI only
+pytest api_tests/        # API only
+pytest performance/      # Performance
 ```
+
+**Pro tips:**
+- Use `make test-smoke` before pushing (catches 80% of issues)
+- Run `make quality` to check code style
+- Use `-x` flag to stop on first failure: `pytest -x`
+- Add `-v` for verbose output: `pytest -v`
 
 ## 📁 Project Structure
 
