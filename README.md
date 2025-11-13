@@ -5,7 +5,7 @@
 [![Playwright](https://img.shields.io/badge/playwright-1.41-green.svg)](https://playwright.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> A battle-tested, production-ready test automation framework I built from scratch. Started with "let's automate some tests" and ended up with 278+ tests, a full CI/CD pipeline, and more automation than a Tesla factory.
+> A test automation framework I built from scratch for interview prep. Started with "let's automate some tests" and ended up with 278+ tests, a full CI/CD pipeline, and more automation than I expected.
 
 ## 🎯 What This Is
 
